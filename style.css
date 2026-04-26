@@ -45,6 +45,23 @@ button:active {
   line-height: 1.5;
 }
 
+.paramount-btn {
+  display: inline-block;
+  margin-top: 15px;
+  background-color: #0064ff;
+  color: white;
+  padding: 14px 24px;
+  border-radius: 16px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+}
+
+.paramount-btn:active {
+  transform: scale(0.97);
+}
+
 /* Desktop version */
 @media (min-width: 900px) {
   h1 {
