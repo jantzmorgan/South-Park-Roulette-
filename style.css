@@ -45,6 +45,14 @@ button:active {
   line-height: 1.5;
 }
 
+.classic-toggle {
+  display: block;
+  margin-top: 18px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #222;
+}
+
 .paramount-btn {
   display: inline-block;
   margin-top: 15px;
