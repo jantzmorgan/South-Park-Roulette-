@@ -1,29 +1,39 @@
+@font-face {
+  font-family: 'SouthPark';
+  src: url('southpark.ttf');
+}
+
 body {
   margin: 0;
   padding: 20px;
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to bottom, #87ceeb, #ffffff);
+  font-family: 'SouthPark', sans-serif;
+  background: linear-gradient(to bottom, #72c9f4 0%, #9edcf7 55%, #f8f8f8 100%);
   text-align: center;
+	background-attachment: fixed;
 }
 
 h1 {
-  font-size: 38px;
-  color: #111;
-  margin-top: 20px;
-  margin-bottom: 25px;
+  font-size: 28px;
+  color: #e97a12;
+  margin-top: 0px;
+  margin-bottom: 10px;
   font-weight: 900;
+	text-shadow: 3px 3px 0 #ffffff;
+	font-family: 'SouthPark', sans-serif;
+	line-height: 1.0;
 }
 
 button {
-  background-color: #e63946;
+  background-color: #d92f24;
   color: white;
   border: none;
   padding: 16px 28px;
   font-size: 22px;
   font-weight: 700;
   border-radius: 18px;
-  box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+  box-shadow: 5px 5px 0 rgba(0,0,0,0.25);
   cursor: pointer;
+	font-family: 'SouthPark', sans-serif;
 }
 
 button:active {
@@ -32,38 +42,45 @@ button:active {
 
 #result {
   margin-top: 30px;
-  background-color: white;
+  background-color: #b69272;
   padding: 20px;
   border-radius: 18px;
   font-size: 18px;
   font-weight: 600;
-  color: #222;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+	font-family: 'SouthPark', sans-serif;
+  color: #1f1f1f;
+  box-shadow: 5px 5px 0 rgba(0,0,0,0.18);
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
   line-height: 1.5;
+	border: 4px solid #2e8b57;
 }
 
 .classic-toggle {
   display: block;
   margin-top: 18px;
   font-size: 18px;
+	font-family: 'SouthPark', sans-serif;
   font-weight: 700;
-  color: #222;
+  color: #185236;
 }
 
 .paramount-btn {
-  display: inline-block;
+  display: block;
   margin-top: 15px;
-  background-color: #0064ff;
+  background-color: #2f59d9;
   color: white;
   padding: 14px 24px;
   border-radius: 16px;
   text-decoration: none;
   font-size: 18px;
   font-weight: 700;
-  box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+	font-family: 'SouthPark', sans-serif;
+  box-shadow: 5px 5px 0 rgba(0,0,0,0.25);
+	width: 100%;
+	max-width: 100%;
+	box-sizing: border-box;
 }
 
 .paramount-btn:active {
