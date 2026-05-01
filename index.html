@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Page Info -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>South Park Episode Roulette</title>
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="style.css?v=5">
+</head>
+
+<body>
+
+	<!-- Header / Title -->
+	<header class="header-bg">
+		<h1>
+			South Park <br>
+			Episode <br>
+			Roulette
+		</h1>
+	</header>
+
+	<!-- Main App -->
+	<main class="app">
+
+		<!-- Episode Picker -->
+		<section class="picker-section">
+			<button id="pickBtn">Pick Random Episode</button>
+
+			<label class="classic-toggle">
+				<input type="checkbox" id="classicMode">
+				Classic Seasons Only (1-8)
+			</label>
+
+			<button id="paramountBtn">Open Episode</button>
+
+			<p id="result"></p>
+
+			<button id="saveBtn">Save Favorite</button>
+		</section>
+
+		<!-- Favorites -->
+		<section id="favoritesSection">
+			<div class="sort-buttons">
+				<button id="sortRatingBtn">Sort by Rating</button>
+				<button id="sortSeasonBtn">Sort by Season</button>
+			</div>
+
+			<h2>Favorite Episodes</h2>
+
+			<div id="favoritesList"></div>
+		</section>
+
+		<!-- Recent Episodes -->
+		<section id="recentSection">
+			<h2>Last 10 Episodes</h2>
+
+			<p id="recentHint">Tap an episode to select it</p>
+
+			<div id="recentList"></div>
+		</section>
+
+	</main>
+
+	<!-- Footer -->
+	<footer>
+		Unofficial fan-made <br>
+		random episode picker. <br>
+		South Park and related trademarks belong to <br>
+		their respective owners.
+	</footer>
+
+	<!-- JavaScript -->
+	<script src="script.js?v=5"></script>
+
+</body>
+
+</html>

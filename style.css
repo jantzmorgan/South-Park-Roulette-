@@ -1,0 +1,442 @@
+/* =======================
+   1. CUSTOM FONT
+======================= */
+
+@font-face {
+	font-family: 'SouthPark';
+	src: url('southpark.ttf');
+}
+
+
+/* =======================
+   2. GLOBAL STYLES
+======================= */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0 auto;
+	padding: 20px;
+	max-width: 600px;
+
+	background: #57c0fc;
+	color: #1f1f1f;
+
+	font-family: 'SouthPark', sans-serif;
+	text-align: center;
+}
+
+button {
+	background-color: #d92f24;
+	color: white;
+
+	border: none;
+	border-radius: 18px;
+
+	padding: 16px 28px;
+
+	font-family: 'SouthPark', sans-serif;
+	font-size: 22px;
+	font-weight: 700;
+
+	box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.25);
+	cursor: pointer;
+}
+
+button:active {
+	transform: scale(0.97);
+}
+
+
+/* =======================
+   3. HEADER
+======================= */
+
+.header-bg {
+	height: 120px;
+	margin: -20px -20px 0 -20px;
+
+	background-image: url("./clouds-bg.PNG");
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+h1 {
+	margin: 0;
+
+	color: #e97a12;
+
+	font-family: 'SouthPark', sans-serif;
+	font-size: 28px;
+	font-weight: 900;
+	line-height: 1;
+
+	text-shadow: 3px 3px 0 #ffffff;
+}
+
+
+/* =======================
+   4. MAIN APP
+======================= */
+
+.app {
+	width: 100%;
+}
+
+.picker-section {
+	margin-top: 0;
+}
+
+
+/* =======================
+   5. PICKER BUTTONS
+======================= */
+
+#pickBtn {
+	margin-top: 0;
+}
+
+.classic-toggle {
+	display: block;
+
+	margin-top: 18px;
+
+	color: #185236;
+
+	font-size: 18px;
+	font-weight: 700;
+}
+
+#paramountBtn {
+	margin: 10px auto;
+
+	background: linear-gradient(135deg, #2f59d9, #4a7dff);
+
+	border: 3px solid #1e3fa8;
+	box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.25);
+}
+
+#paramountBtn:active {
+	transform: scale(0.96);
+}
+
+
+/* =======================
+   6. RESULT BOX
+======================= */
+
+#result {
+	max-width: 500px;
+	margin: 20px auto 15px auto;
+	padding: 20px;
+
+	background-color: #b69272;
+	color: #1f1f1f;
+
+	border: 4px solid #2e8b57;
+	border-radius: 18px;
+
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 1.5;
+
+	box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.18);
+}
+
+#saveBtn {
+	display: block;
+	margin: 15px auto;
+}
+
+
+/* =======================
+   7. FAVORITES SECTION
+======================= */
+
+#favoritesSection {
+	margin-top: 30px;
+	padding-bottom: 40px;
+}
+
+#favoritesSection h2 {
+	margin-bottom: 10px;
+
+	color: #185236;
+
+	font-size: 28px;
+	text-shadow: 2px 2px 0 white;
+}
+
+#favoritesList {
+	max-height: 400px;
+	overflow-y: auto;
+}
+
+.sort-buttons {
+	margin-bottom: 5px;
+	margin-bottom: 10px;
+}
+
+#sortRatingBtn,
+#sortSeasonBtn {
+	margin: 6px;
+	padding: 10px 14px;
+
+	background-color: #e97a12;
+
+	border-radius: 12px;
+
+	font-size: 15px;
+
+	box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.22);
+}
+
+.favorite-card {
+	max-width: 500px;
+
+	margin: 16px auto;
+	padding: 16px;
+
+	background-color: #b69272;
+
+	border: 4px solid #2e8b57;
+	border-radius: 18px;
+
+	box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.18);
+}
+
+.favorite-card h3 {
+	margin-top: 0;
+
+	color: #1f1f1f;
+
+	font-size: 22px;
+}
+
+
+/* =======================
+   8. FAVORITE STARS
+======================= */
+
+.stars button {
+	padding: 4px;
+
+	background: none;
+	color: black;
+
+	box-shadow: none;
+
+	font-size: 24px;
+}
+
+
+/* =======================
+   9. GOAT BUTTON
+======================= */
+
+.goat-btn {
+	display: block;
+
+	margin: 8px auto;
+	padding: 6px 16px;
+
+	background: #d3d3d3;
+	color: #333;
+
+	border: none;
+	border-radius: 20px;
+
+	font-size: 13px;
+	font-weight: bold;
+
+	box-shadow: 0 4px 0 #a0a0a0;
+}
+
+.goat-active {
+	background: linear-gradient(145deg, #f9c80e, #e6b800);
+	color: #1f1f1f;
+
+	box-shadow: 0 2px 0 #c9a200;
+
+	transform: translateY(2px);
+}
+
+.goat-btn:active {
+	transform: translateY(2px);
+	box-shadow: 0 2px 0 #c9a200;
+}
+
+
+/* =======================
+   10. FAVORITE ACTION BUTTONS
+======================= */
+
+.favorite-actions {
+	display: flex;
+	justify-content: center;
+	gap: 12px;
+
+	margin-top: 6px;
+}
+
+.favorite-actions button {
+	width: 120px;
+	height: 45px;
+	padding: 0;
+
+	border: none;
+	border-radius: 20px;
+
+	color: white;
+
+	font-size: 16px;
+	font-weight: bold;
+
+	box-shadow: 0 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.open-fav-btn {
+	background-color: #2f59d9;
+}
+
+.remove-btn {
+	background-color: #d92f24;
+}
+
+
+/* =======================
+   11. RECENT EPISODES
+======================= */
+
+#recentSection {
+	margin-top: 30px;
+	padding-bottom: 40px;
+}
+
+#recentSection h2 {
+	color: #185236;
+
+	font-size: 28px;
+	text-shadow: 2px 2px 0 white;
+}
+
+#recentHint {
+	margin-top: -5px;
+	margin-bottom: 10px;
+
+	color: #185236;
+
+	font-size: 14px;
+
+	animation: pulseHint 1.8s ease-in-out infinite;
+}
+
+.recent-card {
+	max-width: 500px;
+
+	margin: 10px auto;
+	padding: 12px;
+
+	background-color: #f8f8f8;
+	color: #1f1f1f;
+
+	border: 3px solid #2e8b57;
+	border-radius: 14px;
+
+	box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+
+/* =======================
+   12. FOOTER
+======================= */
+
+footer {
+	margin-top: 20px;
+	padding-bottom: 20px;
+
+	color: #185236;
+
+	font-size: 12px;
+	line-height: 1.4;
+}
+
+
+/* =======================
+   13. ANIMATIONS
+======================= */
+
+@keyframes pulseHint {
+	0% {
+		transform: scale(1);
+		opacity: 0.8;
+	}
+
+	50% {
+		transform: scale(1.05);
+		opacity: 1;
+	}
+
+	100% {
+		transform: scale(1);
+		opacity: 0.8;
+	}
+}
+
+@keyframes tapBounce {
+	0% {
+		transform: scale(1);
+	}
+
+	40% {
+		transform: scale(0.95);
+	}
+
+	70% {
+		transform: scale(1.05);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+.tap-bounce {
+	animation: tapBounce 0.25s ease;
+}
+
+
+/* =======================
+   14. DESKTOP VERSION
+======================= */
+
+@media (min-width: 700px) {
+	.header-bg {
+		max-width: 600px;
+		margin: -20px auto 0 auto;
+	}
+}
+
+@media (min-width: 900px) {
+	h1 {
+		font-size: 42px;
+		line-height: 0.95;
+	}
+
+	button {
+		font-size: 24px;
+		padding: 18px 36px;
+	}
+
+	#result {
+		max-width: 500px;
+		font-size: 22px;
+	}
+}
