@@ -1,0 +1,20 @@
+{
+	"name": "South Park Episode Roulette",
+	"short_name": "SP Roulette",
+	"start_url": "./index.html",
+	"display": "standalone",
+	"background_color": "#57c0fc",
+	"theme_color": "#57c0fc",
+	"orientation": "portrait",
+	"icons": [{
+			"src": "icon-192.PNG",
+			"sizes": "192x192",
+			"type": "image/png"
+		},
+		{
+			"src": "icon-512.PNG",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	]
+}

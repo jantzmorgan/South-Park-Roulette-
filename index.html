@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Page Info -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>South Park Episode Roulette</title>
+
+	<!-- PWA / App Feel -->
+	<meta name="theme-color" content="#57c0fc">
+	<link rel="manifest" href="manifest.json">
+	<link rel="apple-touch-icon" href="icon-512.png">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-title" content="SP Roulette">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="style.css?v=6">
+</head>
+
+<body>
+
+	<!-- App Shell -->
+	<div class="app-shell">
+
+		<!-- Header / Title -->
+		<header class="hero-header">
+			<div class="hero-overlay">
+				<h1>
+					South Park <br>
+					Episode <br>
+					Roulette
+				</h1>
+
+				<p class="app-subtitle">
+					Pick random or choose from the full library.
+				</p>
+			</div>
+		</header>
+
+		<!-- Main App -->
+		<main class="app">
+
+			<!-- Episode Picker -->
+			<section class="card picker-section" aria-label="Random episode picker">
+
+				<button id="pickBtn" class="main-action-btn">
+					Pick Random Episode
+				</button>
+
+				<label class="classic-toggle">
+					<input type="checkbox" id="classicMode">
+					<span>Classic Seasons Only (1-8)</span>
+				</label>
+
+				<button id="paramountBtn" class="open-current-btn">
+					Open Episode
+				</button>
+
+				<p id="result" class="result-box">
+					Pick an episode to get started.
+				</p>
+
+				<button id="saveBtn" class="save-btn">
+					Save Favorite
+				</button>
+
+			</section>
+
+			<!-- Favorites -->
+			<section id="favoritesSection" class="card favorites-section" aria-label="Favorite episodes">
+
+				<div class="section-top">
+					<div>
+						<h2>Favorite Episodes</h2>
+						<p>Rate episodes, mark GOATs, and open them fast.</p>
+					</div>
+				</div>
+
+				<div class="sort-buttons">
+					<button id="sortRatingBtn">Sort by Rating</button>
+					<button id="sortSeasonBtn">Sort by Season</button>
+				</div>
+
+				<div id="favoritesList" class="card-list"></div>
+
+			</section>
+
+			<!-- All Episodes -->
+			<section id="allEpisodesSection" class="card all-episodes-section" aria-label="All episodes">
+
+				<div class="section-top">
+					<div>
+						<h2>All Episodes</h2>
+						<p>Search, filter by season, or open any episode directly.</p>
+					</div>
+				</div>
+
+				<div class="library-controls">
+					<input id="episodeSearchInput" type="search" placeholder="Search episodes..." autocomplete="off">
+
+					<select id="seasonFilterSelect">
+						<option value="all">All Seasons</option>
+					</select>
+				</div>
+
+				<div class="library-actions">
+					<button id="clearFiltersBtn" type="button">
+						Clear Filters
+					</button>
+				</div>
+
+				<div id="episodeCountText" class="episode-count-text">
+					Loading episodes...
+				</div>
+
+				<div id="allEpisodesList" class="episode-library-list"></div>
+
+			</section>
+
+		</main>
+
+		<!-- Recent Episodes -->
+		<section id="recentSection" class="card recent-section" aria-label="Recently picked episodes">
+
+			<div class="section-top">
+				<div>
+					<h2>Last 10 Episodes</h2>
+					<p id="recentHint">Tap an episode to select it again.</p>
+				</div>
+			</div>
+
+			<div id="recentList" class="card-list"></div>
+
+		</section>
+
+		<!-- Footer -->
+		<footer>
+			Unofficial fan-made random episode picker. <br>
+			South Park and related trademarks belong to their respective owners.
+		</footer>
+
+	</div>
+
+	<!-- JavaScript -->
+	<script src="script.js?v=6"></script>
+
+</body>
+
+</html>
